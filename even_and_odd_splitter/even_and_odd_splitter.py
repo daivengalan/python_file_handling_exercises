@@ -16,6 +16,10 @@ class NumberSplitter:
                         else:
                             odd_out.write(f"{current_number}\n")
 
+if __name__ == "__main__":
+    splitter = NumberSplitter()
+    splitter.process_numbers()
+
 input_stream = open("numbers.txt", "r")
 even_file = open("even.txt", "w")
 odd_file = open("odd.txt", "w")
