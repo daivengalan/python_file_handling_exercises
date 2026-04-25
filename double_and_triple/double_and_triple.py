@@ -7,5 +7,10 @@ class IntegerProcessor:
     def process_numbers(self):
         with open(self.source_file, "r") as source:
             for line in source:
-                number = int(line.strip())
-                print(f"Reading: {number}")
+                val = int(line.strip())
+                if val % 2 == 0:
+                    # even logic here
+                    pass
+                else:
+                    # odd logic here
+                    pass
