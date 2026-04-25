@@ -9,8 +9,6 @@ class IntegerProcessor:
             for line in source:
                 val = int(line.strip())
                 if val % 2 == 0:
-                    # even logic here
-                    pass
-                else:
-                    # odd logic here
-                    pass
+                    result = val ** 2
+                    with open(self.even_file, "a") as even_out:
+                        even_out.write(str(result) + "\n")
