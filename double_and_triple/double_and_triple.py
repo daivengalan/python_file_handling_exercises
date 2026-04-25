@@ -10,8 +10,7 @@ class IntegerProcessor:
                 open(self.odd_file, "w") as odd_out:
 
             for line in source:
-                val = int(line.strip())
-                if val % 2 == 0:
-                    even_out.write(str(val ** 2) + "\n")
-                else:
-                    odd_out.write(str(val ** 3) + "\n")
+                cleaned_line = line.strip()
+                if not cleaned_line:  # skip empty lines
+                    continue
+                val = int(cleaned_line)
