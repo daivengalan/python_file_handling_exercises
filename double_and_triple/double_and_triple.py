@@ -5,10 +5,13 @@ class IntegerProcessor:
         self.odd_file = "triple.txt"
 
     def process_numbers(self):
-        with open(self.source_file, "r") as source:
+        with open(self.source_file, "r") as source, \
+                open(self.even_file, "w") as even_out, \
+                open(self.odd_file, "w") as odd_out:
+
             for line in source:
                 val = int(line.strip())
                 if val % 2 == 0:
-                    result = val ** 2
-                    with open(self.even_file, "a") as even_out:
-                        even_out.write(str(result) + "\n")
+                    even_out.write(str(val ** 2) + "\n")
+                else:
+                    odd_out.write(str(val ** 3) + "\n")
