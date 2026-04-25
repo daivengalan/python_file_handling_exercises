@@ -4,4 +4,8 @@ class IntegerProcessor:
         self.even_file = "double.txt"
         self.odd_file = "triple.txt"
 
-test_run = IntegerProcessor("integers.txt")
+    def process_numbers(self):
+        with open(self.source_file, "r") as source:
+            for line in source:
+                number = int(line.strip())
+                print(f"Reading: {number}")
