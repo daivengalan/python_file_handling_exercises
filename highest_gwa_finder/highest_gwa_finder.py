@@ -1,8 +1,8 @@
-file_path = "students.txt"
+class Student:
+    def __init__(self, student_name, gwa_score):
+        self.student_name = student_name
+        self.gwa_score = float(gwa_score)
 
-with open(file_path, "r") as data:
-    for line in data:
-        info = line.strip().split(",")
-        name = info[0]
-        gwa = info[1]
-        print(f"Name: {name} | GWA: {gwa}")
+# testing if the class works
+test_student = Student("Test User", "1.75")
+print(test_student.student_name, test_student.gwa_score)
