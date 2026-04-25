@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e708367c-94bf-488d-b04f-cb6548870932" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/my_life_diary/my_life_diary.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_life_diary/my_life_diary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_life_diary/mylife.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_life_diary/mylife.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.double_and_triple.executor": "Run",
     "Python.even_and_odd_splitter.executor": "Run",
     "Python.highest_gwa_finder.executor": "Run",
     "Python.my_life_diary.executor": "Run",
