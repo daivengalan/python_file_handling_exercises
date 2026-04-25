@@ -13,13 +13,10 @@ class GwaProcessor:
             for line in file:
                 name, gwa = line.strip().split(",")
                 self.students.append(Student(name, gwa))
-# (Keep the classes from Commit 6, then add this method inside GwaProcessor)
-    def get_highest(self):
-        # MISTAKE: Using max() assumes a higher number is better
-        highest = max(self.students, key=lambda s: s.gwa_score)
-        return highest
 
-# (Add at the bottom)
+    def get_highest(self):
+        return min(self.students, key=lambda s: s.gwa_score)
+
 processor = GwaProcessor("students.txt")
 processor.load_data()
 top = processor.get_highest()
