@@ -1,30 +1,22 @@
-class DiaryWriter:
-    def __init__(self, filename):
-        self.filename = filename
+class LifeDiaryWriter:
+   def __init__(self, output_file):
+       self.output_file = output_file
+   def start_writing(self):
+       try:
+           with open(self.output_file, "w") as file:
+               while True:
+                   current_line = input("Enter line: ")
+                   file.write(current_line + "\n")
 
-    def collect_lines(self):
-        while True:
-            user_input = input("Enter line: ")
-            # MISTAKE: Opening file inside the loop with 'w' overwrites everything
-            with open(self.filename, "a") as file:
-                file.write(user_input + "\n ")
+                   user_choice = input("Are there more lines y/n? ").lower().strip()
 
-            choice = input("Are there more lines y/n? ")
-            if choice.lower() == 'no':
-                break
+                   if user_choice == 'no':
+                       print("File writing complete. Check mylife.txt!")
+                       break
 
-    def write_to_diary(self):
-        try:
-            while True:
-                user_text = input("Enter line: ")
-                with open(self.filename, "a") as file:
-                    file.write(user_text + "\n")
+       except IOError as error_message:
+           print(f"Could not write to file: {error_message}")
 
-                choice = input("Are there more lines y/n? ")
-                if choice.lower() == 'n':
-                    break
-        except Exception as error:
-            print(f"Something went wrong: {error}")
-
-writer = DiaryWriter("mylife.txt")
-writer.collect_lines()
+if __name__ == "__main__":
+   my_life_logger = LifeDiaryWriter("mylife.txt")
+   my_life_logger.start_writing()
