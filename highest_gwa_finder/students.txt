@@ -1,2 +1,20 @@
 Juan Dela Cruz, 1.25
 Maria Clara Santos, 1.50
+Jose Rizal, 1.00
+Andres Bonifacio, 2.25
+Emilio Aguinaldo, 1.75
+Apolinario Mabini, 1.25
+Gabriela Silang, 1.50
+Melchora Aquino, 2.00
+Juan Luna, 1.10
+Marcelo H. Del Pilar, 1.75
+Antonio Luna, 1.80
+Gregorio Del Pilar, 2.10
+Lapu Lapu, 1.30
+Diego Silang, 2.50
+Tandang Sora, 1.45
+Francisco Balagtas, 1.60
+Graciano Lopez Jaena, 1.90
+Epifanio Delos Santos, 2.20
+Lope K. Santos, 2.40
+Benigno Aquino, 1.35
